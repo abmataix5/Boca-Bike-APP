@@ -13,6 +13,8 @@ class Station(models.Model):
     image_url = models.CharField(max_length=200,default='./descarga.jpeg')
     bikes = models.CharField(max_length=200,default='Disponible')
     state_station = models.CharField(max_length=200,default='Disponible')
+    latitude = models.DecimalField(max_digits=30, decimal_places=20, null=False,default='0')
+    longitude = models.DecimalField(max_digits=30, decimal_places=20, null=False,default='0')
  
    
     def __str__(self):

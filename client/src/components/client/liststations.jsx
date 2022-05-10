@@ -2,7 +2,7 @@ import React from 'react'
 import Station from './station'
 import Loading from 'react-simple-loading';
 import { useUser } from '../../hooks/useUser';
-
+import { Link } from 'react-router-dom';
 export default function ListStations ({stations}) {
 
   const {  isLogged } = useUser(); 
@@ -20,11 +20,11 @@ export default function ListStations ({stations}) {
           <section className="py-5 text-center container">
             <div className="row py-lg-5">
               <div className="col-lg-6 col-md-8 mx-auto">
-                <h1 className="fw-light">Todas nuestras estaciones</h1>
-          
+                <h1 className="fw-light">Quieres saber cual es la estación más cerca de ti? </h1>
+            
                 <p>
-                  <a to="" className="btn btn-primary my-2">Mas Información</a>
-                
+
+                  <Link to={`/maps_view/`} className="btn btn-primary my-2">Ver en mapa</Link>
                 </p>
               </div>
             </div>

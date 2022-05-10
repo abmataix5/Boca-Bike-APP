@@ -16,7 +16,7 @@ export function useStations () {
 
     StationsService.getAllStations()
       .then(stations => {
-
+console.log(stations)
         setStations(stations.data.stations)
         setLoading(false)
         

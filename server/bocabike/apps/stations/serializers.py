@@ -19,7 +19,9 @@ class StationSerializer(serializers.ModelSerializer):
             'state',
             'image_url',
             'bikes',
-            'state_station'
+            'state_station',
+            'latitude',
+            'longitude'
         
         )
         model = Station 
@@ -51,6 +53,9 @@ class StationListDetailSerializer(serializers.ModelSerializer):
             'image_url',
             'bikes',
             'slots',
+             'latitude',
+            'longitude'
+        
        
         )
         model = Station 

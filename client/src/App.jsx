@@ -24,7 +24,7 @@ const Dashboard = React.lazy(() => import("./pages/admin/dashboard"));
 const ManageBikes =  React.lazy(() => import("./pages/admin/manageBikes"));
 const ManageStations =  React.lazy(() => import("./pages/admin/manageStations"));
 const ManageIncidents =  React.lazy(() => import("./pages/admin/manageIncidents"));
-
+const GoogleMaps = React.lazy(() => import("./pages/client/GoogleMaps"));
 
 function App() {
 
@@ -58,6 +58,7 @@ function App() {
                         <Route exact path='/manageBikes' element={<ManageBikes/>}/> 
                         <Route exact path='/manageStations' element={<ManageStations/>}/> 
                         <Route exact path='/manageIncidents' element={<ManageIncidents/>}/> 
+                        <Route exact path='/maps_view' element={<GoogleMaps/>}/> 
                     
                       </Routes>
 

@@ -1,3 +1,13 @@
 .hedaer_pr{
     background-color: rgb(14, 143, 42);
 }
+
+.menu_nu{
+    margin-left: 650px;
+    font-size: 25px;
+    justify-content:space-between ;
+}
+
+.div_menu{
+    display: flex;
+}

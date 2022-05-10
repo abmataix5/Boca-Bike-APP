@@ -31,16 +31,16 @@ export default function Header () {
         
           <a className="navbar-brand me-2" href="http://localhost:3000/">
             <img
-              src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg"
-              height="50"
+              src="./logoBocaBike.png"
+              height="80"
               alt="MDB Logo"
               loading="lazy"
             />
           </a>
  
-          <div className="collapse navbar-collapse" id="navbarButtonsExample">
+          <div className="collapse navbar-collapse div_menu" id="navbarButtonsExample">
         
-            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul className="navbar-nav me-auto mb-2 mb-lg-0 menu_nu">
               
               {
                 headerAdmin === 'true' 
@@ -162,6 +162,7 @@ export default function Header () {
         </div>
 
       </nav>
+      
 
 
     )
