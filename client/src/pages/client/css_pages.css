@@ -1,0 +1,14 @@
+.info_column{
+    height: 700px;
+    background-color: rgb(177, 245, 175);
+}
+
+.info_img{
+  /*   background-image: url("/home/abel/eCar2Go/client/public/logo.png"); */
+  width: 700px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px;
+}
