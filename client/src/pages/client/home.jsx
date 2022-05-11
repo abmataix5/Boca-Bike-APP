@@ -4,7 +4,7 @@ export default function Home() {
 
     return (
         <> 
-        <div className="container">
+        <div className="container-fluid">
             <div className="row p-3">
                 <Carousel>
                 <Carousel.Item interval={2000}>

@@ -1,5 +1,5 @@
 .hedaer_pr{
-    background-color: rgb(14, 143, 42);
+    background-color: rgb(63, 63, 63);
 }
 
 .menu_nu{
@@ -10,4 +10,14 @@
 
 .div_menu{
     display: flex;
+}
+
+.info_maps{
+    padding: 80px;
+    background-color: rgb(226, 214, 214);
+}
+
+.maps_h1{
+    font-size: 30px;
+    color: rgb(63, 63, 63);;
 }

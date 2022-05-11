@@ -31,7 +31,7 @@ export default function Header () {
         
           <a className="navbar-brand me-2" href="http://localhost:3000/">
             <img
-              src="./logoBocaBike.png"
+              src="./logo.png"
               height="80"
               alt="MDB Logo"
               loading="lazy"
