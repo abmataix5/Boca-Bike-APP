@@ -12,7 +12,6 @@ export default function Stations() {
     return (
       <div>
       <ListStations stations={stations}/>
-      <GoogleMaps stations={stations}/>
       </div>
     );
   }
