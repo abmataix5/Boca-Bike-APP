@@ -30,11 +30,11 @@ export default function Login() {
 
     return (
        
-
+<div className="container ">
      
       <form className="form-signin mt-5" onSubmit={handleSubmit}>
      
-        <img className="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>
+        <img className="mb-4"       src="./logo.png" alt="" width="150" height="150"/>
         <h1 className="h3 mb-3 font-weight-normal">Inicia sesión en BocaBike</h1>
 
         <div className="form-group mx-sm-5 mb-5 col-xs-4">
@@ -43,23 +43,17 @@ export default function Login() {
           <input type="email" id="inputEmail" className="form-control mt-4" placeholder="Email" required autoFocus    onChange={(e) => setEmail(e.target.value)} value={email}/>
 
           <label htmlFor="inputPassword" className="sr-only">Contraseña</label>
-          <input type="password" id="inputPassword" className="form-control mt-4 small" placeholder="Contraseña"    onChange={(e) => setPassword(e.target.value)} required value={password}/>
+          <input type="password" id="inputPassword" className="form-control mt-4" placeholder="Contraseña"    onChange={(e) => setPassword(e.target.value)} required value={password}/>
 
         </div>
 
-        <div className="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="remember-me"/> Remember me
-          </label>
-        </div>
-
-        <button className="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+        <button className="btn btn-lg btn-primary btn-block" type="submit">INICIAR SESIÓN</button>
 
         <p className="mt-5 mb-3 text-muted">&copy; 2022-2022</p>
       </form>
   
      
-        
+      </div>    
             
         
     );

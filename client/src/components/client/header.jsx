@@ -47,23 +47,29 @@ export default function Header () {
                 ? 
                 <>
                   <li className="nav-item">
-                  <Link to={'/'} className="nav-link px-3 me-2 text-white">Home</Link>
+                  <Link to={'/'} className="nav-link px-3 me-2 text-white">HOME</Link>
                   </li>
+                  <li className="nav-item">
+                <Link to={'/stations'} className="nav-link px-3 me-2 text-white">ESTACIONES</Link>
+                </li>
                   <li className="nav-item ">
-                  <Link to={'/dashboard'} className="nav-link px-3 me-2 text-white">Panel de administración</Link>
+                <Link to={'/info'} className="nav-link px-3 me-2 text-white">FUNCIONAMINETO</Link>
+                </li>
+                  <li className="nav-item ">
+                  <Link to={'/dashboard'} className="nav-link px-3 me-2 text-white">PANEL DE ADMINISTRACIÓN</Link>
                   </li>
                 </>
                 :
                 <>
                 
                 <li className="nav-item">
-                <Link to={'/'} className="nav-link px-3 me-2 text-white">Home</Link>
+                <Link to={'/'} className="nav-link px-3 me-2 text-white">HOME</Link>
                 </li>
                 <li className="nav-item">
-                <Link to={'/stations'} className="nav-link px-3 me-2 text-white">Estaciones</Link>
+                <Link to={'/stations'} className="nav-link px-3 me-2 text-white">ESTACIONES</Link>
                 </li>
                 <li className="nav-item ">
-                <Link to={'/info'} className="nav-link px-3 me-2 text-white">Como funciona?</Link>
+                <Link to={'/info'} className="nav-link px-3 me-2 text-white">FUNCIONAMINETO</Link>
                 </li>
 
                 </>
@@ -146,8 +152,8 @@ export default function Header () {
                 : /* Si no esta loggued, muestra lo siguiente: */
                 <>
 
-                  <Link to={'/login'} className="btn btn-success px-3 me-2">Login</Link>
-                  <Link to={'/register'} className="btn btn-danger me-3">Registrate gratis</Link>
+                  <Link to={'/login'} className="btn btn-primary px-3 me-2">INICIAR SESIÓN</Link>
+                  <Link to={'/register'} className="btn btn-success me-3">NUEVA CUENTA</Link>
               
                 </>
 

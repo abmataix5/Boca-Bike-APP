@@ -1,14 +1,21 @@
 .info_column{
-    height: 700px;
+    height: 1000px;
     background-color: rgb(177, 245, 175);
+    padding-top: 120px;
+    color: rgb(65, 65, 65);
 }
 
 .info_img{
   /*   background-image: url("/home/abel/eCar2Go/client/public/logo.png"); */
   width: 700px;
+  padding-top: 50px;
 }
 
 p{
     font-size: 20px;
     padding: 10px;
+}
+
+.img_car{
+  height: 500px !important;
 }

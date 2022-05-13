@@ -49,7 +49,7 @@ export default function GoogleMaps({stations,current_position}) {
       <div className="info_maps bg-light">
 
         <h1 className="maps_h1">Mira en nuestro mapa GEOLOCALIZADO que estación esta más cerca de ti!</h1>
-        <Link to={`/stations/`} className="btn btn-primary my-2 mt-5">Volver a lista de estaciones</Link>
+        <Link to={`/stations`} className="btn btn-primary my-2 mt-5">Volver a lista de estaciones</Link>
 
       </div>
 
@@ -58,7 +58,7 @@ export default function GoogleMaps({stations,current_position}) {
         <GoogleMap
           id="map"
           mapContainerStyle={mapContainerStyle}
-          zoom={16.8}
+          zoom={17.8}
           center={center}
           options={options}
           onLoad={onMapLoad}

@@ -8,10 +8,10 @@ export default function InfoBike() {
 
 <div class="row">
     <div className="col info_img">
-      <img src="./logo.png" class="info_img"></img>
+      <img src="./logo.png" class="info_img mt-5"></img>
     </div>
     <div className="col info_column">
-      <h1 className="p-5">Que es boca bike y como funciona?</h1>
+      <h1 className="p-5 mt-5">Que es boca bike y como funciona?</h1>
       <p>BocaBike es una aplicación desarrollada como proyecto final de 2n DAW</p>
       <p>La App esta pensada para la gestion de una empresa de alquileres de bicis electricas, en la que oferimos
         a los clientes la posibilidad de alquilar una bicicleta en la estacion mas cercana a su ubicación actual, ya que laaplicacion cuenta con geolocalización

@@ -8,7 +8,7 @@ import { useUser } from "../../hooks/useUser";
 import { Button ,Modal} from 'react-bootstrap';
 import { useIncidents } from '../../hooks/useIncidents';
 import  RentContext  from "../../context/RentsContext";
-
+import "./css_pages.css";
 
 export default function StationDetail() {
 
@@ -51,7 +51,7 @@ export default function StationDetail() {
 
         <>
 
-          <div className="container mt-5">
+          <div className="container-fluid mt-5">
 
                 <div className="card mt-5">
                     <div className="card-body">
@@ -61,24 +61,24 @@ export default function StationDetail() {
                                 <div className="white-box text-center"><img src={"." + station.image_url} width="100%"  className="img-responsive"/></div>
                             </div>
                             <div className="col-lg-7 col-md-7 col-sm-6">
-                                <h4 className="box-title mt-5">Información sobre la estación</h4>
-                                <p>Estación : {station.name}</p>
+                                <h1 className="box-title mt-5">Información sobre la estación</h1>
+                                <p clas>Estación : {station.name}</p>
                                 <p>Localización : {station.location} </p>
                                 <p>Slots en funcionamineto : {station.slots.length}</p>
                             
                           
-                                <button className="btn btn-danger btn-rounded" onClick={handleShow}>Reportar incidencia</button>
+                                <button className="btn btn-danger btn-rounded btn-lg" onClick={handleShow}>Reportar incidencia</button>
                             </div>
 
                             <div className="col-lg-12 col-md-12 col-sm-12 mt-2">
-                                <h3 className="box-title mt-5">Bicis disponibles para reservar</h3>
+                                <h1 className="box-title mt-5">Bicis disponibles para reservar</h1>
                                 <div className="table-responsive mt-5">
                                 
 
                                         {station.slots.length === 0 || isLogged === false
                                             
                                             ? 
-                                            <div>Inicia sesión para poder reservar nuestras bicis<Loading></Loading> </div>
+                                            <p className="p-3">Inicia sesión para poder reservar nuestras bicis<Loading></Loading> </p>
                                             
                                             
                                             :
@@ -101,7 +101,7 @@ export default function StationDetail() {
                             </div>
                         </div>
 
-                        <Link to={`/stations`} className="btn btn-sm btn-danger mt-5">Volver a todas las estaciones</Link>
+                        <Link to={`/stations`} className="btn btn-lg btn-primary mt-5">Volver a todas las estaciones</Link>
 
                     </div>
                 </div>

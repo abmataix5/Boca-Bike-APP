@@ -31,11 +31,11 @@ const { register, handleSubmit, formState:{errors},} = useForm();
 
     return (
        
-    
+    <div className="container">
      
       <form className="form-signin mt-5" onSubmit={handleSubmit(sendData)}>
 
-        <img className="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72"/>
+        <img className="mb-4"  src="./logo.png" alt="" width="150" height="150"/>
         <h1 className="h3 mb-3 font-weight-normal">Nueva cuenta en BocaBike</h1>
 
         <div className="form-group mx-sm-5 mb-5 col-xs-4">
@@ -111,14 +111,14 @@ const { register, handleSubmit, formState:{errors},} = useForm();
         </div>
 
  
-        <button className="btn btn-lg btn-primary btn-block" type="submit">Registrar-se</button>
+        <button className="btn btn-lg btn-primary btn-block" type="submit">CREAR NUEVA CUENTA</button>
 
         <p className="mt-5 mb-3 text-muted">&copy; 2022-2022</p>
 
       </form>
   
      
-        
+      </div>    
             
         
     );
