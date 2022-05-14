@@ -23,7 +23,7 @@ const {bikes} = useBikes()
 
             <main className="col-md-9 ms-sm-auto col-lg-10 px-md-4">
     
-            <h2>Todas nuestra bicis disponibles</h2>
+            <h1 className="mt-5 mb-5">Todas nuestra bicis disponibles</h1>
 
                 <ListBikes bikes={bikes}/>
             

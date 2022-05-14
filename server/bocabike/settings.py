@@ -50,7 +50,8 @@ INSTALLED_APPS = [
     'bocabike.apps.profiles',
     'bocabike.apps.authentication',
     'bocabike.apps.rents',
-    'bocabike.apps.notifications'
+    'bocabike.apps.notifications',
+    'bocabike.apps.payments'
 
 
 ]
@@ -70,6 +71,9 @@ REST_FRAMEWORK = {
     
 }
 
+STRIPE_SECRET_KEY = 'sk_test_51KyHgbFQQQP6KluJQImkedLSRK74VxFn8LA58J6ChpG2A1sMwNBnoSbjm5aLh9vLMvnxmp9wqVtglfBbo5F82pyJ00u1jTf5oW'
+
+SITE_URL=    'http://localhost:3000'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
