@@ -2,6 +2,7 @@ import React,{useState} from 'react'
 import { Link } from 'react-router-dom';
 import { useIncidents } from '../../hooks/useIncidents';
 import { Button ,Modal} from 'react-bootstrap';
+import Stripe from './stripe';
 
 export default function Station ({ station}) {
    
@@ -54,7 +55,7 @@ export default function Station ({ station}) {
             <p className="card-text">Direccion: {station.location}</p>
             <div className="d-flex justify-content-between align-items-center">
               <div className="btn-group">
-                <Link to={`/stationDetail/${station.name}`} className="btn btn-sm btn-primary">Mas información</Link>
+                <Stripe></Stripe>
                 <button type="button" className="btn btn-sm btn-danger" onClick={handleShow}>Reportar incidencia</button>
               </div>
               <small className="text-muted text">Estado: <strong>{station.state_station}</strong></small>

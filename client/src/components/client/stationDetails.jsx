@@ -32,6 +32,8 @@ export default function StationInfoDetails ({ slot}) {
   
   return (
 
+    
+
 slot.slot_state === 'LIBRE' ?
 
     <tr>

@@ -17,6 +17,11 @@ const StationsService = {
         return ApiService().post(`rent/`,rent_info);
     },
 
+    payRent() { 
+        return ApiService().post(`/create-checkout-session`);
+    },
+
+
     updateSlotRent(slot,id_slot) { 
        
         return ApiService().put(`stations/slotUpdate/${id_slot}/`,slot);

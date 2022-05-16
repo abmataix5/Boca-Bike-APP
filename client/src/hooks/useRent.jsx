@@ -40,6 +40,7 @@ export function useRents () {
         .then((data) => {
           setRentActive(data)
           console.log(data)
+         
         })
         .catch((err) => {
          console.log(err)
@@ -59,6 +60,7 @@ export function useRents () {
 
           localStorage.removeItem('bike_rentID')
           setRentActive(data)
+          window.location.href = "http://localhost:3000/stations";
      
        
         })

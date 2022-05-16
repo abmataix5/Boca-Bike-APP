@@ -11,7 +11,7 @@ export default function Home() {
                 <Carousel.Item interval={2000}>
                     <img
                     className="d-block w-100 img_car"
-                    src='./bici.jpeg'   //800x400img
+                    src='./logo.png'   //800x400img
                     alt="First slide"
                     />
     
@@ -19,7 +19,7 @@ export default function Home() {
                 <Carousel.Item interval={3000}>
                     <img
                     className="d-block w-100 img_car"
-                    src='./bici.jpeg'  //800x400img
+                    src='./logoBocaBike.png'  //800x400img
                     alt="Second slide"
                     />
         

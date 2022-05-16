@@ -78,7 +78,7 @@ export default function StationDetail() {
                                         {station.slots.length === 0 || isLogged === false
                                             
                                             ? 
-                                            <p className="p-3">Inicia sesión para poder reservar nuestras bicis<Loading></Loading> </p>
+                                            <p className="p-3">No hay bicis disponibles o inicia sesión para alquilar<Loading></Loading> </p>
                                             
                                             
                                             :

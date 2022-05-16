@@ -104,16 +104,19 @@ class RentSerializer(serializers.ModelSerializer):
             user = Profile.objects.get(id= id_user)
         
         except Profile.DoesNotExist:
+          
              raise NotFound('No existe usuario con ese id')
 
         try:
             id_bike = self.context['bike']
             bike = Bike.objects.get(id= id_bike)
         except Bike.DoesNotExist:
+      
              raise NotFound('No existe bici con ese id')
 
         try:
             id_station = self.context['station']
+       
             station = Station.objects.get(id= id_station)
         
         except Station.DoesNotExist:

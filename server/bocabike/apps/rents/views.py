@@ -13,7 +13,7 @@ from bocabike.apps.core.permissions import IsStaff
 class RentView(generics.ListCreateAPIView):
 
     serializer_class = RentSerializer
-    permission_classes = (IsStaff,)
+    permission_classes = (IsAuthenticated,)
 
 
 
