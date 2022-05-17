@@ -29,6 +29,6 @@ class StripeCheckoutView(APIView):
         except:
       
             return Response(
-                {'error': 'Something went wrong when creating stripe checkout session'},
+                {'error': 'Error en la creacion de la sesion de pago'},
                 status=status.HTTP_500_INTERNAL_SERVER_ERROR
             )

@@ -8,19 +8,18 @@ export default function Stripe () {
 	const location = useLocation();
 
 	useEffect(() => {
-		// Check to see if this is a redirect back from Checkout
-		// const query = new URLSearchParams(window.location.search);
+		
 		const values = QueryString.parse(location.search);
 
 		if (values.success) {
 			console.log(
-				'Order placed! You will receive an email confirmation.'
+				'Éxito en el pago'
 			);
 		}
 
 		if (values.canceled) {
 			console.log(
-				"Order canceled -- continue to shop around and checkout when you're ready."
+				"Error en el pago"
 			);
 		}
 	}, []);
