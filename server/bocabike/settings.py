@@ -116,7 +116,7 @@ DATABASES = {
             'NAME': 'reserva',
             'USER': 'root',
             'PASSWORD': 'ola123',
-            'HOST': 'localhost',
+            'HOST': 'mysqlContainer',
             'PORT': '3306',
         }
     }
@@ -162,8 +162,10 @@ STATIC_URL = 'static/'
 
 CORS_ALLOWED_ORIGINS = (
     'http://0.0.0.0:3000',
-    'http://localhost:3000',
-)
+    'http://localhost:3000'
+
+    
+) 
 
 
 CORS_ORIGIN_ALLOW_ALL = True 

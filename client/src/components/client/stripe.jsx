@@ -27,7 +27,7 @@ export default function Stripe () {
 	return (
 
 			<form
-				 action="http://127.0.0.1:8080/api/create-checkout-session"
+				 action="http://0.0.0.0:8005/api/create-checkout-session"
 				method='POST'
 			>
 				<button className='btn btn-primary' type='submit'>

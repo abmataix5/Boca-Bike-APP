@@ -3,11 +3,18 @@ version: "3"
 services:
   db:
     image: mysql:5.7
+    
     container_name: mysqlContainer
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     ports:
       - "30000:3306"
-    env_file: .env
+    environment:
+
+      MYSQL_ROOT_PASSWORD: ola123
+      MYSQL_DB: reserva
+    volumes:
+      - ./mysql-dump:/data
+
     restart: always
 
     networks:
@@ -15,7 +22,7 @@ services:
 
   backend:
     build: ./server/
-    container_name: djangoContainer
+    container_name: djangocontainer
     command: sh -c "./wait-for-it.sh db:3306; python manage.py makemigrations;python manage.py migrate;python manage.py runserver 0.0.0.0:8080"
     restart: always
     working_dir: /app/backend/
