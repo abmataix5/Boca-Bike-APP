@@ -1,7 +1,6 @@
 # APP BocaBike 📋
 
-
-Tercer proyecto del curso 2n Desarrollo de aplicaciones web.
+PROYECTO PERSONAL REACT + DJANGO DRF
 
 Aplicacion web destinada a la adminnistración de alquileres de bicicletas electricas de una ciudad.
 
